@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #04043d;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    color: aliceblue;
+}
+#todo-app{
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px white;
+    background-color: #34b7ce;
+            color: #000;
+            box-shadow: 0 0 5px aqua,
+                        0 0 25px aqua,
+                        0 0 50px aqua,
+                        0 0 200px aqua;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+#todo-app h2{
+    color: #04043d;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: serif;
+}
+#todo-app h2 img{
+    width: 80px;
+    margin-left: 45%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #25259bc3;
+    border-radius: 30px;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color:#e3e3f0;
+    padding: 10px;
+    font-weight: 18px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 30px;
+}
+button img{
+    width: 40px;
+    margin-left: 2%;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("https://cdn1.iconfinder.com/data/icons/3d-isometric-color/256/target-iso-color.png");
+    background-size: 35px 35px;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    text-decoration: line-through;
+    text-decoration-color: yellowgreen;
+}
+ul li.checked::before{
+    background-image: url("https://cdn1.iconfinder.com/data/icons/user-interface-2202/512/checked.png");
+    background-size: 60px 80px;
+
+}
+ul li span{
+    background-image: url("https://cdn1.iconfinder.com/data/icons/bam-free-3d/512/Cross.png");
+    background-size: 32px 32px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
