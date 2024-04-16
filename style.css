@@ -36,7 +36,14 @@ body{
 }
 #todo-app h2 img{
     width: 80px;
-    margin-left: 45%;
+    margin-left: 15%;
+}
+#todo-app span img{
+    width: 80px;
+    margin-left: 80%;
+}
+#todo-app span img:hover{
+    cursor: pointer;
 }
 .row{
     display: flex;

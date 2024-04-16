@@ -34,3 +34,8 @@ function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
 showTask();
+
+function showDate(){
+    const d = new Date();
+    console.log(d.getFullYear(),d.getMonth(),d.getDate())
+}
